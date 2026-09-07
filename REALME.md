@@ -136,20 +136,6 @@ Una vez corriendo, el bot expone un servidor en el puerto 3000:
 | `/vouchers` | Lista comprobantes recibidos |
 | `/shutdown` | Apagado limpio del sistema |
 
----
-
-## 📁 Estructura del proyecto
-
-```
-├── index.js                   # Código principal
-├── .env.example               # Plantilla de configuración
-├── .env                       # Variables de entorno (NO subir a GitHub)
-├── mensajes_enviados.json     # Historial de mensajes (generado automático)
-├── pagos_procesados.json      # Historial de pagos (generado automático)
-├── cola_recordatorios.json    # Cola de envíos (generado automático)
-├── ciclo_actual.json          # Estado del ciclo (generado automático)
-└── vouchers/                  # Comprobantes recibidos (generado automático)
-```
 
 ---
 
