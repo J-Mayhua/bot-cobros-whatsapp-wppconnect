@@ -1,0 +1,25 @@
+# Dependencias (NUNCA subir, se regeneran con npm install)
+node_modules/
+
+# Variables de entorno / secretos
+.env
+.env.local
+
+# Sesión de WhatsApp (whatsapp-web.js)
+.wwebjs_auth/
+.wwebjs_cache/
+
+# Sesión de WPPConnect
+tokens/
+
+# Vouchers/imágenes procesadas (datos, no código)
+vouchers/*.jpg
+vouchers/*.png
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operativo / editor
+.DS_Store
+.vscode/

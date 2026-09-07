@@ -1,0 +1,43 @@
+{
+    "name": "ucrm-automation-wpp",
+    "version": "1.0.0",
+    "description": "Sistema de automatización UCRM con WPPConnect, OCR y reconocimiento de vouchers",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "stop": "curl http://localhost:3000/shutdown",
+        "reset-session": "npm run clean-session && npm start",
+        "clean-session": "rm -rf tokens && echo 'Sesión eliminada'",
+        "clean-vouchers": "rm -rf vouchers/*.jpg && echo 'Vouchers eliminados'",
+        "test": "node test.js",
+        "health": "curl http://localhost:3000/health",
+        "vouchers": "curl http://localhost:3000/vouchers"
+    },
+    "keywords": [
+        "ucrm",
+        "wppconnect",
+        "whatsapp",
+        "automation",
+        "ocr",
+        "voucher",
+        "billing"
+    ],
+    "author": "Mayhua",
+    "license": "MIT",
+    "dependencies": {
+        "@wppconnect-team/wppconnect": "^1.33.0",
+        "axios": "^1.6.2",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "nodemailer": "^6.9.7",
+        "qrcode-terminal": "^0.12.0",
+        "tesseract.js": "^5.1.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.2"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
